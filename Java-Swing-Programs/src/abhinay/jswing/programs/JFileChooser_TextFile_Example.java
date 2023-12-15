@@ -14,7 +14,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-public class JFileChooserExample extends JFrame implements ActionListener {
+public class JFileChooser_TextFile_Example extends JFrame implements ActionListener {
 
 	/**
 	 * The object of JFileChooser class represents a dialog window from which the
@@ -41,7 +41,7 @@ public class JFileChooserExample extends JFrame implements ActionListener {
 	JScrollPane scrollPane;
 	FileNameExtensionFilter fileFilter;
 
-	public JFileChooserExample() {
+	public JFileChooser_TextFile_Example() {
 		setTitle("JFileChooser Example");
 		setSize(1000, 600);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -61,14 +61,13 @@ public class JFileChooserExample extends JFrame implements ActionListener {
 		scrollPane.setBounds(20, 0, 900, 520);
 		add(scrollPane);
 
-		// this will allow user to select either jpg or docx files
-		fileFilter = new FileNameExtensionFilter("File Filter", "jpg", "docx");
-
+		// this will allow user to select only txt files
+		fileFilter = new FileNameExtensionFilter("Only Text Files", "txt");
 		setVisible(true);
 	}
 
 	public static void main(String[] args) {
-		new JFileChooserExample();
+		new JFileChooser_TextFile_Example();
 	}
 
 	@Override
@@ -101,9 +100,8 @@ public class JFileChooserExample extends JFrame implements ActionListener {
 			// If the user has clicked on the "Cancel" option in JFileChooser Dialog,
 			// it will be equal to below constant variable JFileChooser.CANCEL_OPTION
 			if (fileSelectionStatus == JFileChooser.CANCEL_OPTION) {
-				System.out.println("File Selection Canceled .....");
+				System.out.println("File Selection Canceled by the user.....");
 			}
 		}
 	}
-
 }
