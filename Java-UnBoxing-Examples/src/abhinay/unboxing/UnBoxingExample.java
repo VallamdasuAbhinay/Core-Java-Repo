@@ -1,4 +1,4 @@
-package abhinay.autoboxing;
+package abhinay.unboxing;
 
 public class UnBoxingExample {
 	/*
