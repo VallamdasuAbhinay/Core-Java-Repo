@@ -1,6 +1,6 @@
 package abhinay.strings;
 
-public class StringNthOccurence {
+public class Core_Java_String_Nth_Occurence {
 
 	public static void main(String[] args) {
 		String str = "abhinay,sri,vastav";

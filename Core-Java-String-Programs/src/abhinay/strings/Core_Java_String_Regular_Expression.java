@@ -1,11 +1,9 @@
 package abhinay.strings;
 
-import java.util.ArrayList;
-import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class StringRegularExpression {
+public class Core_Java_String_Regular_Expression {
 
 	public static void main(String[] args) {
 
