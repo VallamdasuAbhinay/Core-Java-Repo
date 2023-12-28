@@ -1,6 +1,6 @@
 package com.abhinay.multidimensional.arrays;
 
-public class Displaying_2D_Array_Elements_In_Matrix_Format {
+public class Displaying_MultiDimensional_Array_Elements_In_Matrix_Format {
 
 	public static void main(String[] args) {
 		int[][] multi_dim_array = { { 10, 20, 30 }, { 40, 50, 60 }, { 70, 80, 90 }, { 100, 110, 120 } };
