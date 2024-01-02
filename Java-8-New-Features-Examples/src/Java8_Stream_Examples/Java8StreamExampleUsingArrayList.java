@@ -1,4 +1,4 @@
-package abhinay.Java8.Examples;
+package Java8_Stream_Examples;
 
 import java.util.ArrayList;
 import java.util.List;
