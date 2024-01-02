@@ -20,9 +20,13 @@ public class Lambda_Expression_Example_Using_Predicate_Negate_Method {
 /*
  * Explanation:
  * 
- * In the above exercise, we have defined Two Predicate functional interfaces
- * numPredicateGreaterThan35 --> This predicate is used to check the numbers greater than 35
- * numPredicateLessThan150 --> This predicate is used to check the numbers less than 150
+ * In the above exercise, we have defined the following Predicate functional
+ * interface companiesWhoseLengthIs6_Predicate --> This predicate is used to
+ * check the company names whose length is equal to 6
+ * 
+ * In above example, we are returning companies whose length is == 6, but it is
+ * negate() predicate so it is returned opposite of that. means it returns
+ * companies whose length is not equal to 6.
  * 
  * Predicate is a functional interface representing a single argument function
  * that returns a boolean value.
