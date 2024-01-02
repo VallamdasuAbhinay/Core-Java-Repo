@@ -33,6 +33,28 @@ public class Check_Empty_String_Using_Lambda_Expression_Predicate_Test_Method {
  * boolean value. It is located in the java.util.function package. It contains a
  * Test (T t) method that evaluates the predicate on the given argument.
  * 
+ * Methods of Predicate :
+ * 
+ * boolean test() - abstract method 
+ * Evaluates this predicate on the given argument.
+
+ * and() - default method 
+ * Returns a composed predicate that represents a logical AND. 
+ * When evaluating the composed predicate, if this predicate is false, 
+ * then the other predicate is not evaluated.
+ * 
+ * negate() - default
+ * Returns a predicate that represents the logical negation of this predicate. 
+ * It will return opposite of given condition.
+ * 
+ * method or() - default method 
+ * Returns a composed predicate that represents a logical OR. 
+ * Return true if any condition becomes true in given predicate.
+ * 
+ * isEqual() - static method
+ * It returns a predicate that tests if two arguments are equal according 
+ * to Objects.equals(Object, Object).
+ * 
  * To check if the strings are empty, we create two test cases, cust_str_1 and
  * cust_str_2, and use the test() method of the Predicate interface.
  */
