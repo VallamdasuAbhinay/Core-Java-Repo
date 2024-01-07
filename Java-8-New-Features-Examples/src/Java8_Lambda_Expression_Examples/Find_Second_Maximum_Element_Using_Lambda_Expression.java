@@ -27,4 +27,6 @@ public class Find_Second_Maximum_Element_Using_Lambda_Expression {
 
 //Find the first element remaining, which will be the second largest, using findFirst().
 
-//If the stream is empty, we return null using orElse (null). 27 //The result is stored in the variable second_max.
+//If the stream is empty, we return null using orElse (null).
+
+//The result is stored in the variable second_max.
