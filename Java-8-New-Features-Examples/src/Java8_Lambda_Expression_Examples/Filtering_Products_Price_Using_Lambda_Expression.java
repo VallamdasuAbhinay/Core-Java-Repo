@@ -1,9 +1,9 @@
-package Java8_Stream_Examples;
+package Java8_Lambda_Expression_Examples;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Java8StreamExampleUsingArrayList {
+public class Filtering_Products_Price_Using_Lambda_Expression {
 
 	public static void main(String[] args) {
 		List<Product> productsList = new ArrayList<Product>();

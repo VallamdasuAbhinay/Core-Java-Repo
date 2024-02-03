@@ -1,13 +1,12 @@
-package Java8_Stream_Examples;
+package Java8_Lambda_Expression_Examples;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Java8StreamExample_ArrayList_Using_Distinct_Count {
+public class Removing_Duplicate_Patients_From_List_Using_Lambda_Exp {
 
 	public static void main(String[] args) {
-		List<Patient> newList = new ArrayList<Patient>();
 		List<Patient> patientsList = new ArrayList<Patient>();
 
 		patientsList.add(new Patient("Sathish", 200200));
