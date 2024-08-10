@@ -13,9 +13,12 @@ public class ElectronicsStore {
 		System.out.println("Printing Phone Object Details....\n" + phoneObj);
 		
 		//In this case, we are following Builder Design Pattern
-		//more details provided in package-info file
+		//more details provided in package-info.java file
 		Phone phoneInstance = new PhoneBuilder().setPhoneName("iPhone 15 Max Pro").setPhoneOS("iOS").createPhone();
 		System.out.println("Printing Phone Object Details....\n" + phoneInstance);
+		
+		Phone phoneInstance2 = new PhoneBuilder().setPhoneName("Oppo A16").setPhonePrice(24865d).createPhone();
+		System.out.println("Printing Phone Object Details....\n" + phoneInstance2);
 		
 	}
 
