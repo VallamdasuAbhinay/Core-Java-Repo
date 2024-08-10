@@ -6,13 +6,14 @@ public class Specific_Word_Search_In_Sentence_Lambda_Exp {
 
 	public static void main(String[] args) {
 		System.out.println("Starting Specific_Word_Search_In_Sentence_Lambda_Exp....");
-		String sentence_1 = "that cat is on the house roof";
+		String sentence = "cat name is pinky. That cat is sitting on the house roof";
 		String keyword = "cat";
-		Long matchCount = Arrays.asList(sentence_1.split("\\s+")).stream().filter(str -> str.equals(keyword)).count();
+		Long matchCount = Arrays.asList(sentence.split("\\s+")).stream().filter(str -> str.equals(keyword)).count();
+		System.out.println("The keyword provided to search is ----> "+ keyword);
 		if (matchCount != 0) {
-			System.out.println("The sentence " + sentence_1 + " contains the keyword " + keyword);
+			System.out.println("The provided keyword " + keyword + " appeared " + " in the sentence --> "+ sentence);
 		} else {
-			System.out.println("The sentence " + sentence_1 + " does not contains the keyword " + keyword);
+			System.out.println("The sentence " + sentence + " does not contains the keyword " + keyword);
 		}
 	}
 
