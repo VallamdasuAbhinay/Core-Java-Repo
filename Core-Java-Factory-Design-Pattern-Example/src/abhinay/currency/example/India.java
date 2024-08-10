@@ -13,10 +13,5 @@ public class India implements Currency{
          
         return "Rs";
     }
- 
-//    public static void main(String a[]){
-//         
-//        India in = new India();
-//        System.out.println(in.getSymbol());
-//    }
+
 }
