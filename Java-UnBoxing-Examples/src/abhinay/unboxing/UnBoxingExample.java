@@ -23,7 +23,7 @@ public class UnBoxingExample {
 	public static void main(String[] args) {
 		System.out.println("Sum...." + sum(Integer.valueOf(11), Integer.valueOf(9)));// .............1
 
-		Integer i = new Integer(10);
+		Integer i = Integer.valueOf(40);
 		int i1 = i;
 		System.out.println("Primitive int value...." + i1);// .............2
 	}
