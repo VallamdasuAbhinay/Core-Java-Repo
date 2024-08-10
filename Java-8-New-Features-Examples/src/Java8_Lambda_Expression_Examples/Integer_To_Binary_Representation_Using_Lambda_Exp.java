@@ -10,7 +10,7 @@ public class Integer_To_Binary_Representation_Using_Lambda_Exp {
 
 		Integer num = 10;
 
-		Function<Integer, String> convertToBinaryStringFunction = (n) -> Integer.toBinaryString(num);
+		Function<Integer, String> convertToBinaryStringFunction = (n) -> Integer.toBinaryString(n);
 		System.out.println("The Binary Representation of " + num + " is " + convertToBinaryStringFunction.apply(num));
 	}
 }
