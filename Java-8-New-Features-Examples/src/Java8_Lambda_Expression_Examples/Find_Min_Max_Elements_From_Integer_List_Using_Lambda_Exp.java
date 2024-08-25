@@ -1,6 +1,7 @@
 package Java8_Lambda_Expression_Examples;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -8,12 +9,21 @@ public class Find_Min_Max_Elements_From_Integer_List_Using_Lambda_Exp {
 
 	public static void main(String[] args) {
 		System.out.println("Starting Find_Min_Max_Elements_From_Integer_List_Using_Lambda_Exp....");
-		List<Integer> numsList = Arrays.asList(200, -40, 100, 69, 400);
+		List<Integer> numsList = Arrays.asList(200, -40, 40, 69, 400);
 		System.out.println("Initial  Elements in the list are....\n"+numsList);
+		//Approach-1
 		Optional<Integer> minElement = numsList.stream().min((x,y) -> x.compareTo(y));
 		System.out.println("Minimum Element in the list is "+minElement.orElse(null));
+		//Approach-2
+		Integer minInteger = numsList.stream().min(Comparator.comparing(Integer::valueOf)).orElse(null);
+		System.out.println("Minimum Element in the list is ......."+minInteger);
+		
+		//Approach-1
 		Optional<Integer> maxElement = numsList.stream().max((x,y) -> x.compareTo(y));
 		System.out.println("Maximum Element in the list is "+maxElement.orElse(null));
+		//Approach-2
+		Integer maxInteger = numsList.stream().max(Comparator.comparing(Integer::valueOf)).orElse(null);
+		System.out.println("Maximum Element in the list is ......."+maxInteger);
 	}
 
 }
