@@ -4,7 +4,7 @@ public class Calculate_Factorial_Of_Given_Number_Using_Lambda_Expression {
 
 	public static void main(String[] args) {
 		System.out.println("Starting Calculate_Factorial_Of_Given_Number_Using_Lambda_Expression....");
-		AbhinayFactorial abhi_factorial = (num) -> {
+		FunctionalInterface_CalculateFactorial abhi_factorial = (num) -> {
 			Long result = 1l;
 			for (int f = 1; f <= num; f++) {
 				result = result * f;
@@ -21,7 +21,7 @@ public class Calculate_Factorial_Of_Given_Number_Using_Lambda_Expression {
  * Explanation:
  * 
  * In the above exercise, we have created a custom function interface called
- * "AbhinayFactorial" and it has the single abstract method called
+ * "FunctionalInterface_CalculateFactorial" and it has the single abstract method called
  * "calculateFactorial"
  * 
  * Using Lambda expression we have provided the implementation for the logic of
