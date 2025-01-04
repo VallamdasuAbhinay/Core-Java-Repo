@@ -14,7 +14,7 @@ public class ThreadCallingStartMethodTwice {
 
 /*
  * Once the thread is started, we cannot start it again. If we call the start()
- * on the thread object multiple time, it will not show the compile time error,
+ * on the thread object multiple times, it will not show the compile time error,
  * but when we run the application it will give the following Runtime exception:
  * java.lang.IllegalThreadStateException
  */
