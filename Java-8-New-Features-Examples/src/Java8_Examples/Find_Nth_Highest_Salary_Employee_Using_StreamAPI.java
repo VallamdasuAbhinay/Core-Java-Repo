@@ -28,12 +28,21 @@ public class Find_Nth_Highest_Salary_Employee_Using_StreamAPI {
 	 * them
 	 */
 	public static void findNthHighestEmployeeSalary(int num, List<EmployeeClass> employeesList) {
-		Entry<Double, List<String>> entry = employeesList.stream()
-				.collect(Collectors.groupingBy(EmployeeClass::getSalary,
-						Collectors.mapping(EmployeeClass::getFirstName, Collectors.toList())))
-				.entrySet().stream().sorted(Collections.reverseOrder(Map.Entry.comparingByKey()))
-				.collect(Collectors.toList()).get(num - 1);
 
-		System.out.println(entry);
+		
+		System.out.println("Printing the employees names and salaries in the descending order");
+		employeesList.stream()
+		.collect(Collectors.groupingBy(EmployeeClass::getSalary,
+				Collectors.mapping(EmployeeClass::getFirstName, Collectors.toList())))
+		.entrySet().stream().sorted(Collections.reverseOrder(Map.Entry.comparingByKey()))
+		.collect(Collectors.toList()).forEach(System.out::println);
+		
+		Entry<Double, List<String>> entry = employeesList.stream()
+		.collect(Collectors.groupingBy(EmployeeClass::getSalary,
+				Collectors.mapping(EmployeeClass::getFirstName, Collectors.toList())))
+		.entrySet().stream().sorted(Collections.reverseOrder(Map.Entry.comparingByKey()))
+		.collect(Collectors.toList()).get(num - 1);
+
+		System.out.println("Second highest salary details....\n" +entry);
 	}
 }
