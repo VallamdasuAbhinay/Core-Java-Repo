@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class Fetch_Max_Salary_Employee_Details_Using_max_function {
 
@@ -22,20 +23,35 @@ public class Fetch_Max_Salary_Employee_Details_Using_max_function {
 		maxSalaryEmployee.ifPresent(emp -> System.out.println(emp));
 
 		maxSalaryEmployee.ifPresent(emp -> System.out.println(maxSalaryEmployee.get()));
+
+		Optional<EmployeeClass> maxSalEmployee = employeesList.stream()
+				.sorted(Comparator.comparingDouble(EmployeeClass::getSalary).reversed()).findFirst();
+		if (maxSalEmployee.isPresent()) {
+			System.out.println("Max salary employee :: " + maxSalEmployee.get());
+		}
+		
+		System.out.println("Printing employees list in desc order of their salaries::");
+		List<EmployeeClass> empListDesc = employeesList.stream()
+				.sorted(Comparator.comparingDouble(EmployeeClass::getSalary).reversed()).collect(Collectors.toList());
+		empListDesc.forEach(x -> System.out.println(x));
 	}
 
 }
 
-/* Here we are fetching the employee details having max salary by providing the Comparator and also an attribute (salary)
- * based on it comparison will happen.
+/*
+ * Here we are fetching the employee details having max salary by providing the
+ * Comparator and also an attribute (salary) based on it comparison will happen.
  * 
- * It returns Optional<EmployeeClass> which indicates we might (or) might not have max employee in the provided list.
+ * It returns Optional<EmployeeClass> which indicates we might (or) might not
+ * have max employee in the provided list.
  * 
- * To check if data is present or not, we have applied ifPresent() on Optional object, then only we are printing it.
+ * To check if data is present or not, we have applied ifPresent() on Optional
+ * object, then only we are printing it.
  * 
  * We can also use "maxSalaryEmployee.get()" to print data in optional object.
  * 
- * Drawback 
+ * Drawback
  * 
- * If there are multiple employees with same highest salary, only one employee details will be printed
- *  */
+ * If there are multiple employees with same highest salary, only one employee
+ * details will be printed
+ */
