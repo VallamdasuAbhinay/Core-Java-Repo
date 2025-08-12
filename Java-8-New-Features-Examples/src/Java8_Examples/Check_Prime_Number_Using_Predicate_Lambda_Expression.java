@@ -2,7 +2,7 @@ package Java8_Examples;
 
 import java.util.function.Predicate;
 
-public class Check_Prime_Number_Using_Lambda_Expression {
+public class Check_Prime_Number_Using_Predicate_Lambda_Expression {
 
 	public static void main(String[] args) {
 		System.out.println("Starting Check_Prime_Number_Using_Lambda_Expression....");
