@@ -3,7 +3,9 @@ package com.abhinay.bit.manipulation.programs;
 public class CountSetBitsInGivenInteger {
 	/*
 	 * Write an efficient program to count the number of 1s in the binary
-	 * representation of an integer. 
+	 * representation of an integer.
+	 * 
+	 * Set Bits means number of 1s in the binary representation of an Integer.
 	 * Example
 	 * Input : n = 6 Output : 2 
 	 * Binary representation of 6 is 110 and has 2 set bits
