@@ -6,7 +6,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 
-public class First_Non_Repeating_Character_In_String_Using_Java8 {
+public class Find_First_Non_Repeating_Character_In_String_Using_StreamAPI {
 
 	public static void main(String[] args) {
 		 String str = "aeroaero"; // Output :: First Non Repeating Character Not Found
